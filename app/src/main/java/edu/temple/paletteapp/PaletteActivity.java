@@ -42,6 +42,8 @@ GridView gridView;
         item.add("Robert Garcia");
         item.add("Ryo Sakazaki");
         item.add("Athena Asamiya");
+        item.add("Blue Mary");
+        item.add("Clark Still");
 
         color.add("#D45F00");
         color.add("#D813EC");
@@ -53,6 +55,8 @@ GridView gridView;
         color.add("#8C7696");
         color.add("#FFAE00");
         color.add("#FF87A9");
+        color.add("#85BEFF");
+        color.add("#678773");
         gridView = findViewById(R.id.griddle);
 
 
@@ -68,7 +72,7 @@ GridView gridView;
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(PaletteActivity.this, CanvasActivity.class);
                 intent.putExtra("color", color.get(position).toString());
-                intent.putExtra("text", item.get(position).toString());
+                intent.putExtra("item", item.get(position).toString());
 
                 startActivity(intent);
             }
