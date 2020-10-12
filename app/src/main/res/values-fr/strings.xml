@@ -1,19 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PaletteApp</string>
     <string-array
         name="names">
         <item>Kyo Kusanagi</item>
-        <item>Geese Howard</item>
+        <item>Oies Howard</item>
         <item>Leona Heidern</item>
-        <item>Kula Diamond</item>
+        <item>Kula De Diamant</item>
         <item>Billy Kane</item>
         <item>Yuri Sakazaki</item>
-        <item>Ash Crimson</item>
+        <item>Cendre Crimson</item>
         <item>Robert Garcia</item>
         <item>Ryo Sakazaki</item>
         <item>Athena Asamiya</item>
-        <item>Blue Mary</item>
-        <item>Clark Still</item>
+        <item>Bleu Mary</item>
+        <item>Clark Toujours</item>
     </string-array>
     <string-array
         name="colors">

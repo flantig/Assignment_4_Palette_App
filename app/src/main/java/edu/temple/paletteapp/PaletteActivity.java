@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -22,9 +23,6 @@ import java.util.ArrayList;
 public class PaletteActivity extends AppCompatActivity {
 GridView gridView;
 
-    ArrayList<String> item = new ArrayList<>();
-    ArrayList<String> color = new ArrayList<>();
-
 
 
     @Override
@@ -32,37 +30,16 @@ GridView gridView;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        item.add("Kyo Kusanagi");
-        item.add("Geese Howard");
-        item.add("Leona Heidern");
-        item.add("Kula Diamond");
-        item.add("Billy Kane");
-        item.add("Yuri Sakazaki");
-        item.add("Ash Crimson");
-        item.add("Robert Garcia");
-        item.add("Ryo Sakazaki");
-        item.add("Athena Asamiya");
-        item.add("Blue Mary");
-        item.add("Clark Still");
+        Resources res = getResources();
+        final String[] names = res.getStringArray(R.array.names);
+        final String[] colors = res.getStringArray(R.array.colors);
 
-        color.add("#D45F00");
-        color.add("#D813EC");
-        color.add("#56A961");
-        color.add("#10E1EF");
-        color.add("#6969FF");
-        color.add("#FFF6EC");
-        color.add("#FF2418");
-        color.add("#8C7696");
-        color.add("#FFAE00");
-        color.add("#FF87A9");
-        color.add("#85BEFF");
-        color.add("#678773");
         gridView = findViewById(R.id.griddle);
 
 
 
 
-        final BaseAdapter adapter = new ColorViewAdapter(this, item, color);
+        final BaseAdapter adapter = new ColorViewAdapter(this, names, colors);
 
         gridView.setAdapter(adapter);
 
@@ -71,8 +48,8 @@ GridView gridView;
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(PaletteActivity.this, CanvasActivity.class);
-                intent.putExtra("color", color.get(position).toString());
-                intent.putExtra("item", item.get(position).toString());
+                intent.putExtra("color", colors[position].toString());
+                intent.putExtra("item", names[position].toString());
 
                 startActivity(intent);
             }

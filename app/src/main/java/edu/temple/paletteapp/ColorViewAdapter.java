@@ -17,29 +17,29 @@ import java.util.ArrayList;
 
 public class ColorViewAdapter extends BaseAdapter {
     Context context;
-    ArrayList<String> items;
-    ArrayList<String> colors;
+    String[] items;
+    String[] colors;
 
 
-    public ColorViewAdapter(Context context, ArrayList<String> items, ArrayList<String> colors) {
+    public ColorViewAdapter(Context context, String[] items, String[] colors) {
         this.context = context;
         this.items = items;
-        this.colors= colors;
+        this.colors = colors;
 
     }
 
     @Override
     public int getCount() {
-        return items.size();
+        return items.length;
     }
 
     @Override
     public Object getItem(int position) {
-        return items.get(position);
+        return items[position];
     }
 
     public Object getColor(int position) {
-        return colors.get(position);
+        return colors[position];
     }
 
     @Override
@@ -51,10 +51,10 @@ public class ColorViewAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         TextView textView;
 
-        if(convertView == null) {
+        if (convertView == null) {
 
             textView = new TextView(context);
-            textView.setLayoutParams(new GridView.LayoutParams(359,300));
+            textView.setLayoutParams(new GridView.LayoutParams(359, 300));
             textView.setGravity(Gravity.CENTER);
             textView.setTypeface(null, Typeface.BOLD);
 
