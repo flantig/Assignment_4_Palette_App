@@ -3,18 +3,18 @@
     tools:ignore="MissingTranslation" >
     <string-array
         name="names">
-        <item>Kyo Kusanagi</item>
-        <item>Oies Howard</item>
-        <item>Leona Heidern</item>
+        <item>Kyo De Kusanagi</item>
+        <item>Oies De Howard</item>
+        <item>Leona De Heidern</item>
         <item>Kula De Diamant</item>
-        <item>Billy Kane</item>
-        <item>Yuri Sakazaki</item>
+        <item>Billy De Kane</item>
+        <item>Yuri De Sakazaki</item>
         <item>Cendre Crimson</item>
-        <item>Robert Garcia</item>
-        <item>Ryo Sakazaki</item>
-        <item>Athena Asamiya</item>
-        <item>Bleu Mary</item>
-        <item>Clark Toujours</item>
+        <item>Robert De Garcia</item>
+        <item>Ryo De Sakazaki</item>
+        <item>Athena De Asamiya</item>
+        <item>Bleu De Mary</item>
+        <item>Clark De Toujours</item>
     </string-array>
     <string-array
         name="colors">
