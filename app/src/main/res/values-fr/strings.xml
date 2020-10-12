@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    tools:ignore="MissingTranslation" >
+    <string name="app_name">PaletteApp Français</string>
+    <string name="howto">Cliquez sur une couleur ci-dessous pour lancer le canevas</string>
     <string-array
         name="names">
         <item>Kyo De Kusanagi</item>

@@ -6,6 +6,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -22,6 +23,7 @@ import java.util.ArrayList;
 
 public class PaletteActivity extends AppCompatActivity {
 GridView gridView;
+TextView howto;
 
 
 
@@ -33,10 +35,13 @@ GridView gridView;
         Resources res = getResources();
         final String[] names = res.getStringArray(R.array.names);
         final String[] colors = res.getStringArray(R.array.colors);
+        final String how_to = res.getString(R.string.howto);
 
         gridView = findViewById(R.id.griddle);
+        howto = findViewById(R.id.howto);
 
-
+        howto.setText(how_to);
+        howto.setTypeface(null, Typeface.BOLD);
 
 
         final BaseAdapter adapter = new ColorViewAdapter(this, names, colors);
