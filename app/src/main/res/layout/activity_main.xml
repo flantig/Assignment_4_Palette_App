@@ -4,34 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaletteActivity">
+    tools:context=".MainActivity">
 
-    <GridView
-        android:id="@+id/griddle"
-        android:layout_width="409dp"
-        android:layout_height="600dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="115dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="16dp"
-        android:numColumns="3"
+    <FrameLayout
+        android:id="@+id/paletteContainer"
+        android:layout_width="416dp"
+        android:layout_height="297dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="354dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/howto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginBottom="616dp"
-        android:text=" "
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/canvasContainer"
+        android:layout_width="412dp"
+        android:layout_height="297dp"
+        android:layout_marginTop="434dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

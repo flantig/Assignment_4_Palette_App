@@ -4,15 +4,11 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 
 public class ColorViewAdapter extends BaseAdapter {
@@ -54,7 +50,7 @@ public class ColorViewAdapter extends BaseAdapter {
         if (convertView == null) {
 
             textView = new TextView(context);
-            textView.setLayoutParams(new GridView.LayoutParams(359, 300));
+            textView.setLayoutParams(new GridView.LayoutParams(273, 250));
             textView.setGravity(Gravity.CENTER);
             textView.setTypeface(null, Typeface.BOLD);
 
